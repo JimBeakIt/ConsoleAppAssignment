@@ -12,14 +12,41 @@ namespace ConsoleAppAssignment
         {
             string[] strArray = new string[5];
 
-            strArray[0] = "feeling happy?";
-            strArray[1] = "feeling sad?";
-            strArray[2] = "feeling cross?";
-            strArray[3] = "feeling excited?";
-            strArray[4] = "feeling annoyed?";
+            strArray[0] = "Hello, ";
+            strArray[1] = "Your age is ";
+            strArray[2] = "You live in ";
+            strArray[3] = "You enjoy eating ";
+            strArray[4] = "Your faviorite film is ";
 
-            Console.WriteLine("Are you" + strArray[0]);
-            string happy = Console.ReadLine();
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+
+            Console.WriteLine("How old are you?");
+            string age = Console.ReadLine();
+
+            Console.WriteLine("What country do you live in?");
+            string country = Console.ReadLine();
+
+            Console.WriteLine("What do you enjoy eating?");
+            string eating = Console.ReadLine();
+
+            Console.WriteLine("What is your faviorite film?");
+            string film = Console.ReadLine();
+
+            Console.WriteLine("\n" + strArray[0] + name);
+            Console.ReadLine();
+
+            Console.WriteLine(strArray[1] + age);
+            Console.ReadLine();
+
+            Console.WriteLine(strArray[2] + country);
+            Console.ReadLine();
+
+            Console.WriteLine(strArray[3] + eating);
+            Console.ReadLine();
+
+            Console.WriteLine(strArray[4] + film);
+            Console.ReadLine();
 
 
         }
