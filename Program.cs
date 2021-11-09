@@ -48,18 +48,26 @@ namespace ConsoleAppAssignment
             //Console.WriteLine(strArray[4] + film);
             //Console.ReadLine();
 
-            int i = 0;
+            //int i = 0;
 
-            while (true)
+            //while (true)
+            //{
+
+
+            //    Console.WriteLine($"i = {i}");
+            //    i++;
+
+            //    if (i > 28)
+            //    {
+            //        break;
+            //    }
+            //}
+            //Console.ReadLine();
+
             {
-                
-
-                Console.WriteLine($"i = {i}");
-                i++;
-
-                if (i > 28)
+                for (int j = 1; j <= 20; j++)
                 {
-                    break;
+                    Console.WriteLine("C# For Loop: Iteration {0}", j);
                 }
             }
             Console.ReadLine();
