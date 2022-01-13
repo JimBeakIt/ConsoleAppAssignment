@@ -87,22 +87,19 @@ namespace ConsoleAppAssignment
             }
             Console.ReadLine();
 
-            Console.WriteLine("Guess a fruit");
+            var names1 = new List<string>() { "Apple", "Pear", "Peach", "Banana", "Apple", "Orange" };
 
-            List<string> names1 = new List<string>() { "Apple", "Pear", "Peach", "Banana", "Apple", "Orange" };
-            string findFruit = Console.ReadLine();
+            names1.ForEach(Console.WriteLine);
 
-            if (names1.Contains(findFruit))
-            {
-                Console.WriteLine(names1.IndexOf(findFruit));
-            }
-            else
-            {
-                Console.WriteLine("Not on my list.");
-            }
+            Console.WriteLine("\n");
+
+            IEnumerable<string> duplicates = names1.GroupBy(x => x)
+                                        .Where(g => g.Count() > 1)
+                                        .Select(x => x.Key);
+
+            Console.WriteLine(String.Join(",", duplicates) + " has already appeared in the list");
+
             Console.ReadLine();
-
-
         }
 
     }
